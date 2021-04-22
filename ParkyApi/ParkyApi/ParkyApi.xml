@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ParkyApi</name>
+    </assembly>
+    <members>
+        <member name="M:ParkyApi.Controllers.NationalParkController.GetNationalParks">
+            <summary>
+            Get All National Parks
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyApi.Controllers.NationalParkController.GetNationalPark(System.Int32)">
+            <summary>
+            Get Individual National Park
+            </summary>
+            <param name="nationalParkId">The Id of National Park</param>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyApi.Controllers.NationalParkControllerV2.GetNationalParks">
+            <summary>
+            Get All National Parks
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyApi.Controllers.TrailController.GetTrails">
+            <summary>
+             Get All Trails
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ParkyApi.Controllers.TrailController.GetTrail(System.Int32)" -->
+    </members>
+</doc>
