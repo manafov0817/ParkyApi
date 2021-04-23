@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ParkyApi.Models;
@@ -27,6 +28,7 @@ namespace ParkyApi.Controllers
         /// Get All National Parks
         /// </summary>
         /// <returns></returns>
+        /// 
         [HttpGet]
         public IActionResult GetNationalParks()
         {
@@ -47,6 +49,8 @@ namespace ParkyApi.Controllers
         /// </summary>
         /// <param name="nationalParkId">The Id of National Park</param>
         /// <returns></returns>
+        ///        
+        [Authorize]
         [HttpGet("{nationalParkId:int}")]
         public IActionResult GetNationalPark(int nationalParkId)
         {

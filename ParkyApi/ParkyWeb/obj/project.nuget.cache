@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "G3awYS/3OQ+EroFFLCQ6LDiymR59DIj8raygeGXclu0L0aS4jOIqka9a7scE1Eb9/nVCHK14pBOQzMzVBIMviw==",
+  "dgSpecHash": "5KG/hK3lgy++9JmOWmoa3eMPgbmuI8u01OneSjpT/cufxeV3IEEJAVJrtBNDA3kp4vQUSkqY/mBGyxt9fnKsIw==",
   "success": true,
   "projectFilePath": "D:\\Programming\\Web Programming\\MySelf\\RestApi\\ParkyApi\\ParkyWeb\\ParkyWeb.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\User\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.0.0\\microsoft.aspnetcore.authentication.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.0.0\\microsoft.aspnetcore.authentication.core.2.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.14\\microsoft.aspnetcore.authentication.jwtbearer.3.1.14.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.0.0\\microsoft.aspnetcore.authorization.2.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.0.0\\microsoft.aspnetcore.authorization.policy.2.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.0.0\\microsoft.aspnetcore.hosting.abstractions.2.0.0.nupkg.sha512",

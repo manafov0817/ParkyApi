@@ -29,7 +29,6 @@ namespace ParkyApi.Repository.Concrete
                 context.Set<TEntity>().Add(entity);
                 context.SaveChanges();
                 return Result();
-
             }
         }
 

@@ -9,6 +9,7 @@
             Get All National Parks
             </summary>
             <returns></returns>
+            
         </member>
         <member name="M:ParkyApi.Controllers.NationalParkController.GetNationalPark(System.Int32)">
             <summary>
@@ -16,6 +17,7 @@
             </summary>
             <param name="nationalParkId">The Id of National Park</param>
             <returns></returns>
+                   
         </member>
         <member name="M:ParkyApi.Controllers.NationalParkControllerV2.GetNationalParks">
             <summary>

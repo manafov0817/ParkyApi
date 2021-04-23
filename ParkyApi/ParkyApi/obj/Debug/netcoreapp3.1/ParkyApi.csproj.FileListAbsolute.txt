@@ -77,3 +77,4 @@ D:\Programming\Web Programming\MySelf\RestApi\ParkyApi\ParkyApi\obj\Debug\netcor
 D:\Programming\Web Programming\MySelf\RestApi\ParkyApi\ParkyApi\bin\Debug\netcoreapp3.1\libman.json
 D:\Programming\Web Programming\MySelf\RestApi\ParkyApi\ParkyApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.dll
 D:\Programming\Web Programming\MySelf\RestApi\ParkyApi\ParkyApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+D:\Programming\Web Programming\MySelf\RestApi\ParkyApi\ParkyApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
