@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,7 +18,7 @@ namespace ParkyWeb.Repository.Concrete
             _httpClientFactory = httpClientFactory;
         }
 
-        public async Task<bool> CreateAsync(string url, T entity)
+        public async Task<bool> CreateAsync(string url, T entity, string token = "")
         {
             var request = new HttpRequestMessage(HttpMethod.Post, url);
 
@@ -33,6 +34,11 @@ namespace ParkyWeb.Repository.Concrete
 
             var client = _httpClientFactory.CreateClient();
 
+            if (token!=null && token.Length != 0)
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            }
+
             HttpResponseMessage responseMessage = await client.SendAsync(request);
 
             if (responseMessage.StatusCode == System.Net.HttpStatusCode.Created)
@@ -45,11 +51,17 @@ namespace ParkyWeb.Repository.Concrete
             }
         }
 
-        public async Task<bool> DeleteAync(string url, int id)
+        public async Task<bool> DeleteAync(string url, int id, string token = "")
         {
             var request = new HttpRequestMessage(HttpMethod.Delete, url + id);
 
             var client = _httpClientFactory.CreateClient();
+
+
+            if (token.Length != 0)
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            }
 
             HttpResponseMessage responseMessage = await client.SendAsync(request);
 
@@ -61,11 +73,16 @@ namespace ParkyWeb.Repository.Concrete
 
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync(string url)
+        public async Task<IEnumerable<T>> GetAllAsync(string url, string token = "")
         {
             var request = new HttpRequestMessage(HttpMethod.Get, url);
 
             var client = _httpClientFactory.CreateClient();
+
+            if (token != null && token.Length != 0)
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            }
 
             HttpResponseMessage responseMessage = await client.SendAsync(request);
 
@@ -77,12 +94,17 @@ namespace ParkyWeb.Repository.Concrete
             return null;
         }
 
-        public async Task<T> GetAsync(string url, int id)
+        public async Task<T> GetAsync(string url, int id, string token = "")
         {
 
             var request = new HttpRequestMessage(HttpMethod.Get, url + id);
 
             var client = _httpClientFactory.CreateClient();
+
+            if (token.Length != 0)
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            }
 
             HttpResponseMessage responseMessage = await client.SendAsync(request);
 
@@ -94,7 +116,7 @@ namespace ParkyWeb.Repository.Concrete
             return null;
         }
 
-        public async Task<bool> UpdateAsync(string url, T entity)
+        public async Task<bool> UpdateAsync(string url, T entity, string token = "")
         {
             var request = new HttpRequestMessage(HttpMethod.Patch, url);
 
@@ -109,6 +131,11 @@ namespace ParkyWeb.Repository.Concrete
             }
 
             var client = _httpClientFactory.CreateClient();
+
+            if (token.Length != 0)
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            }
 
             HttpResponseMessage responseMessage = await client.SendAsync(request);
 

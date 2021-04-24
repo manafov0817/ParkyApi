@@ -7,10 +7,10 @@ namespace ParkyWeb.Repository.Abstract
 {
     public interface IRepository<T> where T : class
     {
-        Task<T> GetAsync(string url, int id);
-        Task<IEnumerable<T>> GetAllAsync(string url);
-        Task<bool> CreateAsync(string url, T entity);
-        Task<bool> UpdateAsync(string url, T entity);
-        Task<bool> DeleteAync(string url, int id);
+        Task<T> GetAsync(string url, int id,string token);
+        Task<IEnumerable<T>> GetAllAsync(string url, string token);
+        Task<bool> CreateAsync(string url, T entity, string token);
+        Task<bool> UpdateAsync(string url, T entity, string token);
+        Task<bool> DeleteAync(string url, int id, string token);
     }
 }

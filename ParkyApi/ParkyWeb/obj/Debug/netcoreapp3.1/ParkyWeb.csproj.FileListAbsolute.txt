@@ -400,3 +400,6 @@ D:\Programming\Web Programming\MySelf\RestApi\ParkyApi\ParkyWeb\obj\Debug\netcor
 D:\Programming\Web Programming\MySelf\RestApi\ParkyApi\ParkyWeb\obj\Debug\netcoreapp3.1\Razor\Views\Trails\Index.cshtml.g.cs
 D:\Programming\Web Programming\MySelf\RestApi\ParkyApi\ParkyWeb\obj\Debug\netcoreapp3.1\Razor\Views\Trails\Upsert.cshtml.g.cs
 D:\Programming\Web Programming\MySelf\RestApi\ParkyApi\ParkyWeb\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Programming\Web Programming\MySelf\RestApi\ParkyApi\ParkyWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+D:\Programming\Web Programming\MySelf\RestApi\ParkyApi\ParkyWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Register.cshtml.g.cs
+D:\Programming\Web Programming\MySelf\RestApi\ParkyApi\ParkyWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\AccessDenied.cshtml.g.cs
